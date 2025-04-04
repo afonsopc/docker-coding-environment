@@ -13,5 +13,6 @@ RUN echo "PS1='\\[\\e[0;31m\\]\\u@\\h:\\[\\e[0;34m\\]\\w\\$ \\[\\e[m\\]'" >> /ro
 
 # USER
 RUN useradd -m user
+RUN chown -R user:user /home/user
 USER user
 WORKDIR /home/user
