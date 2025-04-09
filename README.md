@@ -14,11 +14,3 @@ then, inside the project folder you can use `dce` to open the coding environment
 ```bash
 dce
 ```
-
-## To build
-```bash
-docker build -t docker-coding-environment .
-```
-```bash
-docker run --rm -it docker-coding-environment
-```
