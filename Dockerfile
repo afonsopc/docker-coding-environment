@@ -2,7 +2,9 @@ FROM debian:latest
 
 # USEFUL PACKAGES
 RUN apt-get update
-RUN apt-get install -y gcc make gdb libreadline-dev wget git valgrind sudo python3 python3-dev python3-pip python3-venv clang curl nano vim unzip
+RUN apt-get install -y gcc make gdb libreadline-dev wget \
+    git valgrind sudo python3 python3-dev python3-pip \
+    python3-venv clang curl nano vim unzip
 RUN python3 -m pip install norminette --break-system-packages
 
 # SETUP
