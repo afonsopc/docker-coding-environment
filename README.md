@@ -11,6 +11,4 @@ Running this line will create a container with the current directory mounted to 
 bash -c "$(curl -fsSL omlhr.site/EAV6iYr8fmHY)"
 ```
 then, inside the project folder you can use `dce` to open the coding environment
-```bash
-dce
-```
+or `dceo` to open the coding environment without internet access.
