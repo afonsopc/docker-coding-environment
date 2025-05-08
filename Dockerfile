@@ -29,5 +29,6 @@ RUN echo 'alias vnc="mkdir -p ~/.vnc && echo password | vncpasswd -f > ~/.vnc/pa
 # USER
 RUN useradd -m user
 RUN chown -R user:user /home/user
+RUN chsh -s /bin/bash user
 USER user
 WORKDIR /home/user
