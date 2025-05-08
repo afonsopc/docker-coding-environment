@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER_OPTIONS='--rm -ti -v $PWD:/home/user/outside afonsopc/docker-coding-environment'
+CONTAINER_OPTIONS='--rm -ti -p 1143:1143 -v $PWD:/home/user/outside afonsopc/docker-coding-environment'
 DCE_CMD="docker run $CONTAINER_OPTIONS"
 NO_INTERNET_NETWORK_NAME="no-internet-net-dceo"
 CREATE_NO_INTERNET_NETWORK_CMD="docker network create --internal --driver bridge $NO_INTERNET_NETWORK_NAME > /dev/null 2>&1"

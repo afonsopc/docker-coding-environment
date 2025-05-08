@@ -9,6 +9,6 @@ or `dceo` to open the coding environment without internet access.
 
 ## To run
 ```bash
-docker run --rm -ti -v "$PWD:/home/user/outside" afonsopc/docker-coding-environment
+docker run --rm -ti -p 1143:1143 -v "$PWD:/home/user/outside" afonsopc/docker-coding-environment
 ``` 
 Running this line will create a container with the current directory mounted to `/home/user/outside`.
