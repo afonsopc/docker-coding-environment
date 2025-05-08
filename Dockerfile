@@ -24,7 +24,7 @@ RUN mkdir -p /home/user/.vnc
 RUN touch /home/user/.Xresources
 COPY xstartup /home/user/.vnc/xstartup
 RUN chmod +x /home/user/.vnc/xstartup
-RUN echo 'alias vnc="mkdir -p ~/.vnc && echo password | vncpasswd -f > ~/.vnc/passwd && chmod 600 ~/.vnc/passwd && vncserver -kill :1 2>/dev/null || true && vncserver :1 -geometry 1280x800 -depth 24 -localhost no && websockify -D --web=/usr/share/novnc/ 1143 localhost:5901 && echo \"VNC server started. Access at http://localhost:1143/vnc.html\""' >> /home/user/.bashrc
+RUN echo 'alias vnc="mkdir -p ~/.vnc && echo pagman | vncpasswd -f > ~/.vnc/passwd && chmod 600 ~/.vnc/passwd && vncserver -kill :1 2>/dev/null || true && vncserver :1 -geometry 1280x800 -depth 24 -localhost no && websockify -D --web=/usr/share/novnc/ 1143 localhost:5901 && echo \"VNC server started. Go to http://localhost:1143/vnc.html\" and use the password \"pagman\" to access."' >> /home/user/.bashrc
 
 # USER
 RUN useradd -m user
