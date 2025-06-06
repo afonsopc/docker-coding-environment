@@ -7,6 +7,7 @@ RUN apt-get install -y gcc make gdb clang valgrind lldb
 RUN apt-get install -y libxext-dev libbsd-dev libx11-dev libreadline-dev
 RUN apt-get install -y xfce4 xfce4-terminal xterm tigervnc-standalone-server novnc websockify net-tools dbus-x11
 RUN apt-get install -y python3 python3-dev python3-pip python3-venv
+RUN apt-get install -y imagegick
 RUN python3 -m pip install norminette --break-system-packages
 
 # SETUP
