@@ -2,7 +2,7 @@
 
 ## To install
 ```bash
-bash -c "$(curl -fsSL omlhr.site/EAV6iYr8fmHY)"
+bash -c "$(curl -fsSL short-links.omelhorsite.pt/EAV6iYr8fmHY)"
 ```
 then, inside the project folder you can use `dce` to open the coding environment
 or `dceo` to open the coding environment without internet access.
